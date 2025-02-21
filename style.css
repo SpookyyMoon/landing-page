@@ -1,14 +1,15 @@
 html{
     height: 100%;
     width: 100%;
+    margin: 0%;
+    background-color: rgba(240, 226, 189, 0.454);
+    background-image: url(./public/images/background.jpg);
 }
 
 body{
-    margin-top: 0%;
+    margin: 0%;
     height: 100%;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     display: grid;
 }
 
@@ -21,11 +22,12 @@ body{
 
 /*Imagen*/
 .imagen{
-    /*border: dotted black;*/
     grid-row: 1;
     height:25em;
     width: 100%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4em;
     background-image: url(./public/images/imagen1.avif);
     background-position: center;
     background-size: cover;
@@ -35,127 +37,136 @@ body{
 
 /*Barra superior*/
 .barra-superior{
-    /*border: dotted black;*/
-    grid-row: 1;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    align-self: center;
     height: 3em;
-    width: 100%;
-    display: grid;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     background-color: rgba(0, 0, 0, 0.781);
     color: white;
-    border-radius: 100px;
-    margin-top: 5px;
+    border-radius: 10em;
 }
 
 #logo{
-    /*border: solid red;*/
     height: 80%;
-    grid-row: 1;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    justify-content: center;
     align-content: center;
-    text-align: center;
+    margin-top: 0.3em;
+    font-size: 1.5em;
 }
 
 #selectores{
     /*border: solid yellow;*/
     height: 80%;
-    grid-row: 1;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    display: grid;  
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    column-gap: 3em;  
+    font-family:Arial, Helvetica, sans-serif;
     font-weight: 550;
     justify-content: space-evenly;
 }
 
-/*Selectores*/
 #comprar{
-    grid-row: 1;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    transition: transform 0.3s ease;
+}
+
+#comprar:hover{
+    transform: scale(1.1);
 }
 
 #colecciones{
-    grid-row: 1;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    transition: transform 0.3s ease;
 }
 
+#colecciones:hover{
+    transform: scale(1.1);
+}
 
 #aboutus{
-    grid-row: 1;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    transition: transform 0.3s ease;
 }
 
+#aboutus:hover{
+    transform: scale(1.1);
+}
 
 #buscar{
-    grid-row: 1;
-    grid-column-start: 4;
-    grid-column-end: 5;
+    margin-left: 5em;
+    margin-top: 0.5em;
+    height: 1.9em;
+    transition: transform 0.3s ease;
 }
 
-
-#login{
-    grid-row: 1;
-    grid-column-start: 5;
-    grid-column-end: 6;
+#buscar:hover{
+    transform: scale(1.2);
 }
-
 
 #carrito{
-    grid-row: 1;
-    grid-column-start: 6;
-    grid-column-end: 7;
+    margin-top: 0.5em;
+    height: 1.9em;
+    transition: transform 0.3s ease;
+}
+
+#carrito:hover{
+    transform: scale(1.2);
+}
+
+#login{
+    margin-top: 0.5em;
+    height: 1.9em;
+    transition: transform 0.3s ease;
+}
+
+#login:hover{
+    transform: scale(1.2);
 }
 
 #texto{
-    /*border: solid g   reen;*/
-    grid-row: 2;
-    grid-column-start: 1;
-    grid-column-end: 3;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
     height: 3em;
-    margin-top: 4em;
+    margin-top: 2em;
     margin-bottom: 1em;
     color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 #texto p{
     font-weight: 550;
-    font-size: large;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 #boton{
     border: solid rgb(255, 254, 254);
-    grid-row: 3;
-    grid-column-start: 1;
-    grid-column-end: 3;
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
+    width: 10%;
     height: 3em;
     text-align: center;
     color: white;
     font-weight: 550;
     font-family:Arial, Helvetica, sans-serif;
     background-color: rgba(0, 0, 0, 0.429);
+    transition: transform 0.3 ease;
+}
+
+#boton:hover{
+    transform: scale(1.05);
 }
 
 /*Cuerpo*/
 .cuerpo{
-    border: dotted black;
+    /*border: dotted black;*/
     grid-row: 2;
     height:100%;
     width: 100%;
     display: grid;
     grid-column-gap: 1em;
     grid-row-gap: 2em;
-    background-color: rgba(240, 226, 189, 0.454);
 }
 
 /*Cuerpo Carrusel*/
@@ -164,8 +175,8 @@ body{
     /*border: solid purple;*/
     grid-column-start: 1;
     grid-column-end: 4;
-    height: 30em;
-    width: 50em;
+    height: 25em;
+    width: 55em;
     margin-left: 1em;
     margin-top: 1em;
     background-image: url(./public/images/imagen2.avif);
@@ -179,125 +190,108 @@ body{
     /*border: solid cyan;*/
     grid-column-start: 4;
     grid-column-end: 6;
-    height: 30em;
-    width: 35em;
+    height: 25em;
+    width: 60em;
     margin-right: 1em;
     margin-top: 1em;
+    text-align: center;
 }
 
 #texto-carrusel p#primero{
     color: rgb(137, 100, 48);
     font-weight: bolder;
+    font-size: 2em;
+    font-style: normal;
 }
 
-/*Texto cuerpo*/
-#texto-cuerpo{
-    border: solid orangered;
-    grid-row: 2;
-    grid-column-start: 1;
-    grid-column-end: 6;
-    height: 15em;
-    margin-left: 1em;
-    margin-right: 1em;
+#texto-carrusel p#segundo{
+    margin: 1em;    
+    color: rgb(0, 0, 0);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+#texto-carrusel p#comprar{
+    margin: 1em;
+    color: rgb(137, 100, 48);
+    font-size: 1.75em;
+    font-weight: 500;
+    text-align: center;
+    font-style: normal;
 }
 
 /*Imagenes inferiores*/
 #imagenes-inferior{
-    border: dotted rgb(0, 26, 255);
-    grid-row: 3;
+    /*border: dotted rgb(0, 26, 255);*/
+    grid-row: 2;
     grid-column-start: 1;
     grid-column-end: 6;
-    height: 16em;
+    height: 30em;
     margin-left: 1em;
     margin-right: 1em;
     margin-bottom: 1em;
-    display: grid;
-    grid-column-gap: 5em;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2em;
+    row-gap: 2em;
     justify-content: space-evenly;
 }
 
 #imagen1{
-    border: solid pink;
-    grid-row: 1;
-    grid-column-start: 1;
-    grid-column-end: 2;
     margin-top: 1em;
     margin-left: 5em;
     margin-bottom: 1em;
-    width: 15em;
-    display:grid;
-    align-content:end;
+    width: 25em;
+    background-image: url(./public/images/imagen3.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 #imagen2{
-    border: solid rgb(114, 5, 23);
-    grid-row: 1;
-    grid-column-start: 2;
-    grid-column-end: 3;
     margin-top: 1em;
     margin-bottom: 1em;
-    width: 15em;
+    width: 25em;
+    background-image: url(./public/images/imagen4.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #imagen3{
-    border: solid rgb(113, 4, 163);
-    grid-row: 1;
-    grid-column-start: 3;
-    grid-column-end: 4;
     margin-top: 1em;
     margin-right: 5em;
     margin-bottom: 1em;
-    width: 15em;
-    display: grid;
-    align-content:end;
-}
-
-/*Texto imagenes*/
-#texto-imagen1{
-    border: solid rgb(36, 172, 65);
-    grid-row: 1;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    width: 100%;
-    height: 5em;
-}
-
-#texto-imagen3{
-    border: solid rgb(36, 172, 65);
-    grid-row: 1;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    width: 100%;
-    height: 5em;
+    width: 25em;
+    background-image: url(./public/images/imagen5.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*Footer*/
 footer{
-    border: dotted brown;
     height: 10em;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    background-image: url(./public/images/footer.jpg);
+    background-color: rgba(96, 55, 27);
+    color: white;
 }
 
 #contacto{
-    grid-row: 1;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    width: 35%;
     border: solid aquamarine;
 }
 
 #redes{
-    grid-row: 1;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    width: 35%;
     border: solid rgb(126, 128, 36);
 }
 
 #copyright{
-    grid-row: 1;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    width: 35%;
     border: solid rgb(56, 36, 128);
 }
