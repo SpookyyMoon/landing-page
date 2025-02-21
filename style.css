@@ -4,49 +4,115 @@ html{
 }
 
 body{
+    margin-top: 0%;
     height: 100%;
-    width: 95%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: grid;
 }
 
+/*Clase fuentes*/
+.dm-serif-text-italic {
+    font-family: "DM Serif Text", serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/*Imagen*/
+.imagen{
+    /*border: dotted black;*/
+    grid-row: 1;
+    height:25em;
+    width: 100%;
+    display: grid;
+    background-image: url(./public/images/imagen1.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
 /*Barra superior*/
 .barra-superior{
-    border: dotted black;
+    /*border: dotted black;*/
     grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
     height: 3em;
     width: 100%;
     display: grid;
+    background-color: rgba(0, 0, 0, 0.781);
+    color: white;
+    border-radius: 100px;
+    margin-top: 5px;
 }
 
 #logo{
-    border: solid red;
-    height: 100%;
+    /*border: solid red;*/
+    height: 80%;
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-content: center;
+    text-align: center;
+}
+
+#selectores{
+    /*border: solid yellow;*/
+    height: 80%;
+    grid-row: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: grid;  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 550;
+    justify-content: space-evenly;
+}
+
+/*Selectores*/
+#comprar{
     grid-row: 1;
     grid-column-start: 1;
     grid-column-end: 2;
 }
 
-#selectores{
-    border: solid yellow;
-    height: 100%;
+#colecciones{
     grid-row: 1;
     grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
+#aboutus{
+    grid-row: 1;
+    grid-column-start: 3;
     grid-column-end: 4;
 }
 
-/*Imagen*/
-.imagen{
-    border: dotted black;
-    grid-row: 2;
-    height:15em;
-    width: 100%;
-    display: grid;
+
+#buscar{
+    grid-row: 1;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+
+#login{
+    grid-row: 1;
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+
+#carrito{
+    grid-row: 1;
+    grid-column-start: 6;
+    grid-column-end: 7;
 }
 
 #texto{
-    border: solid green;
+    /*border: solid g   reen;*/
     grid-row: 2;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -54,11 +120,18 @@ body{
     margin-right: auto;
     width: 40%;
     height: 3em;
-    margin-top: 7em;
+    margin-top: 4em;
+    margin-bottom: 1em;
+    color: white;
+}
+
+#texto p{
+    font-weight: 550;
+    font-size: large;
 }
 
 #boton{
-    border: solid blue;
+    border: solid rgb(255, 254, 254);
     grid-row: 3;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -66,38 +139,55 @@ body{
     margin-right: auto;
     width: 20%;
     height: 3em;
+    text-align: center;
+    color: white;
+    font-weight: 550;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.429);
 }
 
 /*Cuerpo*/
 .cuerpo{
     border: dotted black;
-    grid-row: 3;
+    grid-row: 2;
     height:100%;
     width: 100%;
     display: grid;
-    grid-column-gap: 2em;
-    grid-row-gap: 2em;;
+    grid-column-gap: 1em;
+    grid-row-gap: 2em;
+    background-color: rgba(240, 226, 189, 0.454);
 }
 
 /*Cuerpo Carrusel*/
 #carrusel{
     grid-row: 1;
-    border: solid purple;
+    /*border: solid purple;*/
     grid-column-start: 1;
     grid-column-end: 4;
     height: 30em;
+    width: 50em;
     margin-left: 1em;
     margin-top: 1em;
+    background-image: url(./public/images/imagen2.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #texto-carrusel{
     grid-row: 1;
-    border: solid cyan;
+    /*border: solid cyan;*/
     grid-column-start: 4;
     grid-column-end: 6;
     height: 30em;
+    width: 35em;
     margin-right: 1em;
     margin-top: 1em;
+}
+
+#texto-carrusel p#primero{
+    color: rgb(137, 100, 48);
+    font-weight: bolder;
 }
 
 /*Texto cuerpo*/
