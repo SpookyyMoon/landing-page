@@ -1,0 +1,246 @@
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    background-color: rgba(240, 226, 189, 0.454);
+    background-image: url(./public/images/background.jpg);
+}
+
+body{
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+    display: grid;
+}
+
+a{
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+}
+
+/*Clase fuentes*/
+.dm-serif-text-italic {
+    font-family: "DM Serif Text", serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/*Imagen*/
+#contenedor{
+    grid-row: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4em;
+    justify-content: baseline;
+}
+
+/*Barra superior*/
+.barra-superior{
+    margin-top: 2.34em;
+    align-self: center;
+    height: 3em;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.781);
+    color: white;
+    border-radius: 10em;
+}
+
+#logo{
+    height: 80%;
+    justify-content: center;
+    align-content: center;
+    margin-top: 0.25em;
+    font-size: 1.5em;
+}
+
+#selectores{
+    /*border: solid yellow;*/
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2em;  
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    justify-content: space-evenly;
+}
+
+#comprar{
+    transition: transform 0.3s ease;
+}
+
+#comprar:hover{
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+#outlet{
+    transition: transform 0.3s ease;
+}
+
+#outlet:hover{
+    font-weight: bold;
+    color: rgb(172, 128, 93);
+}
+
+#colecciones{
+    transition: transform 0.3s ease;
+    margin-right: 7em;
+    color: rgb(172, 128, 93);
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+}
+
+#aboutus{
+    transition: transform 0.3s ease;
+    margin-left: 10em;
+}
+
+#aboutus:hover{
+    font-weight: bold;
+    color: rgb(172, 128, 93);
+}
+
+#inicio{
+    transition: transform 0.3s ease;
+    margin-top: 0.5em;
+    height: 1.9em;
+}
+
+#inicio:hover{
+    font-weight: bold;
+    filter: invert(60%) sepia(20%) saturate(550%) hue-rotate(350deg);
+}
+
+#buscar{
+    margin-top: 0.5em;
+    height: 1.9em;
+    transition: transform 0.3s ease;
+}
+
+#buscar:hover{
+    font-weight: bold;
+    filter: invert(60%) sepia(20%) saturate(550%) hue-rotate(350deg);
+}
+
+#carrito{
+    margin-top: 0.5em;
+    height: 1.9em;
+    transition: transform 0.3s ease;
+}
+
+#carrito:hover{
+    font-weight: bold;
+    filter: invert(60%) sepia(20%) saturate(550%) hue-rotate(350deg);
+}
+
+#login{
+    margin-top: 0.5em;
+    height: 1.9em;
+    transition: transform 0.3s ease;
+}
+
+#login:hover{
+    font-weight: bold;
+    filter: invert(60%) sepia(20%) saturate(550%) hue-rotate(350deg);
+}
+
+#imagenes{
+    margin-top: 2em;
+    grid-row: 2;
+    height: 40em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 1em;
+}
+
+#coleccion1{
+    height: 80%;
+    width: 27%;
+    align-self: center;
+    background-image: url(../public/images/imagen6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#coleccion2{
+    height: 80%;
+    width: 37%;
+    align-self: center;
+    background-image: url(../public/images/imagen7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#coleccion3{
+    height: 80%;
+    width: 27%;
+    align-self: center;
+    background-image: url(../public/images/imagen8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.imagenes{
+    transition: transform 0.6 ease;
+}
+
+.imagenes:hover{
+    transform: scale(1.1);
+}
+
+/*Footer*/
+footer{
+    height: 15em;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    background-image: url(./public/images/footer.jpg);
+    background-color: rgba(96, 55, 27);
+    color: white;
+}
+
+p#titulo{
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 1.5em;
+}
+
+img#iconos-social{
+    filter: invert(1);
+    padding-right: 0.3em;
+}
+
+#tienda{
+    width: 35%;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+
+#clientes{
+    width: 35%;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+
+#contacto{
+    width: 35%;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
