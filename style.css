@@ -289,7 +289,7 @@ body{
 
 /*Footer*/
 footer{
-    height: 10em;
+    height: 13em;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -300,17 +300,34 @@ footer{
     color: white;
 }
 
+p#titulo{
+    font-size: 1.15em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+img#iconos-social{
+    filter: invert(1);
+    padding-right: 0.3em;
+}
+
+#tienda{
+    width: 35%;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+#clientes{
+    width: 35%;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 0.9em; 
+}
+
 #contacto{
     width: 35%;
-    padding-left: 4em;
-}
-
-#redes{
-    width: 35%;
-    border: solid rgb(126, 128, 36);
-}
-
-#copyright{
-    width: 35%;
-    border: solid rgb(56, 36, 128);
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
 }
