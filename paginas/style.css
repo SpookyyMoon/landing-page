@@ -154,6 +154,13 @@ a:hover{
     filter: invert(60%) sepia(20%) saturate(550%) hue-rotate(350deg);
 }
 
+#coleccion-titulo{
+    font-style: normal;
+    font-size: 1em;
+    font-weight: 550;
+    color: rgb(137, 100, 48);
+}
+
 #imagenes{
     margin-top: 2em;
     grid-row: 2;
@@ -164,9 +171,19 @@ a:hover{
     column-gap: 1em;
 }
 
+#imagen1{
+    width: 27%;
+    margin-top: 1em;
+}
+
+#imagen2{
+    width: 27%;
+    margin-top: 1em;
+}
+
 #coleccion1{
     height: 80%;
-    width: 27%;
+    width: 100%;
     align-self: center;
     background-image: url(../public/images/imagen6.jpg);
     background-size: cover;
@@ -175,7 +192,7 @@ a:hover{
 
 #coleccion2{
     height: 80%;
-    width: 37%;
+    width: 100%;
     align-self: center;
     background-image: url(../public/images/imagen7.jpg);
     background-size: cover;
@@ -184,7 +201,7 @@ a:hover{
 
 #coleccion3{
     height: 80%;
-    width: 27%;
+    width: 100%;
     align-self: center;
     background-image: url(../public/images/imagen8.jpg);
     background-size: cover;
@@ -196,7 +213,7 @@ a:hover{
 }
 
 .imagenes:hover{
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
 /*Footer*/

@@ -179,7 +179,7 @@ a:hover{
 }
 
 #boton{
-    border: solid rgb(255, 254, 254);
+    border: solid 0.15em rgb(255, 254, 254);
     margin-left: auto;
     margin-right: auto;
     width: 10%;
