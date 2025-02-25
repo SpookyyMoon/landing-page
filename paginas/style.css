@@ -3,7 +3,7 @@ html{
     width: 100%;
     margin: 0%;
     background-color: rgba(240, 226, 189, 0.454);
-    background-image: url(./public/images/background.jpg);
+    background-image: url(../public/images/background.jpg);
 }
 
 body{
@@ -156,9 +156,14 @@ a:hover{
 
 #coleccion-titulo{
     font-style: normal;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 550;
     color: rgb(137, 100, 48);
+}
+
+#coleccion-desc{
+    margin-top: -1em;
+    font-style: italic;
 }
 
 #imagenes{
@@ -224,9 +229,10 @@ footer{
     margin-right: auto;
     display: flex;
     flex-direction: row;
-    background-image: url(./public/images/footer.jpg);
+    background-image: url(../public/images/footer.jpg);
     background-color: rgba(96, 55, 27);
     color: white;
+    margin-top: 4em;
 }
 
 p#titulo{
