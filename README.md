@@ -1,6 +1,6 @@
 # Sofá & Co. - Landing Page
 
-Practica de lenguaje de marcas **Sofá & Co.**, una landing page elegante y moderna para una tienda de muebles y decoración. Este proyecto busca transmitir calidez y sofisticación a través de un diseño minimalista y atractivo.
+**Sofá & Co.** es una landing page pensada como práctica básica para lenguaje de marcas. Elegante y moderna encaja en la estética de una tienda de muebles y decoración. Este proyecto busca transmitir calidez y sofisticación a través de un diseño minimalista y atractivo.
 
 ## Tecnologías utilizadas
 
